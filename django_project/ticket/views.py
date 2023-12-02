@@ -25,7 +25,7 @@ def create_ticket(request):
                     # send email func
                     subject = f'{var.ticket_title} #{var.ticket_id}'
                     message = 'Thank you for creating a ticket, we will assign an engineer soon.'
-                    email_from = 'chidiohiri@email.com'
+                    email_from = 'akash.biswas@email.com'
                     recipient_list = [request.user.email, ]
                     send_mail(subject, message, email_from, recipient_list)
                     messages.success(request, 'Your ticket has been submitted. A Support Engineer would reach out soon.')
